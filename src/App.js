@@ -7,7 +7,7 @@ function App() {
   const  newButtonColor = buttonColor === 'red' ? 'blue' : 'red';
   return (
    <div> 
-   <button style={{backgroundColor : buttonColor}} onClick={()=> setButtonColor(newButtonColor)} disabled={disabled}>
+   <button style={{backgroundColor : disabled ? "gray" : buttonColor}} onClick={()=> setButtonColor(newButtonColor)} disabled={disabled}>
       Change to {newButtonColor}
    </button>
    <input 
