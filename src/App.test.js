@@ -39,4 +39,4 @@ test('Checkbox enables and disables a button', () => {
   // expect button to be enabled again
   expect(colorButton).toBeEnabled();
   expect(checkbox).not.toBeChecked();
-})
+});
